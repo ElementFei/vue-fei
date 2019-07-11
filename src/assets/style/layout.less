@@ -1,0 +1,31 @@
+#layout {
+}
+#sidebar {
+    .el-menu {
+        width: 100%;
+        border-right: 0 none;
+        text-align: left;
+    }
+    //  层叠掉element-ui NavMenu侧边栏自带的滑动
+    .horizontal-collapse-transition {
+        transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+}
+#navbar {
+    .el-menu-vertical-demo.el-menu {
+        width: 100%;
+    }
+    .el-menu--horizontal>.el-menu-item {
+        float: right;
+    }
+    .el-menu--horizontal>.el-submenu {
+        float: right;
+    }
+    .el-menu.el-menu--horizontal {
+        border-bottom: 0 none;
+    }
+}
+//  侧边栏收起状态，左侧边距
+.el-menu--popup-right-start {
+    margin-left: 0;
+}

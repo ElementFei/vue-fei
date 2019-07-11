@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import 'layout.less';
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type:none;
+}
+a{
+  color: #333333;
+  text-decoration:none;
+  -webkit-tap-highlight-color:rgba(162,162,162,0.5);
+}
+input[type=number] {-moz-appearance:textfield;}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input,button,select,textarea {
+  outline: none;
+  border: none;
+}
+textarea{
+  resize:none;
+}
+.icon {
+  display: inline-block;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clear{
+  clear: both;
+}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*zoom:1}
+
+// 头发丝边框
+.border-bot {
+  position: relative;
+}
+.border-bot:before {
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+.border-left {
+  position: relative;
+}
+.border-left:before {
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border-left: 1px solid #eee;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+// 解决element-ui按钮 点中时蓝色边框
+:focus {
+  outline: 0;
+}
